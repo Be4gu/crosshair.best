@@ -67,7 +67,7 @@ const main = document.getElementById('main');
 miras.forEach((miras2) => {
   main.innerHTML += `
   <div class="w-56 h-44 bg-[#141414] overflow-hidden relative rounded-lg border border-white/50 shadow-sm shadow-white/50">
-        <div class="w-full flex justify-center absolute bg-white/20 top-0 left-0 h-32">
+        <div class="w-full flex justify-center absolute bg-white/50 top-0 left-0 h-32">
           <span class="absolute bottom-2 left-2 text-xl text-white font-semibold">${miras2.name}</span>
           <img src="${miras2.pathPrimary}" alt="" srcset="" />
         </div>
@@ -92,7 +92,20 @@ miras.forEach((miras2) => {
 
 document.querySelectorAll('div.code-crosshire').forEach((text) => {
   text.addEventListener('click', () => {
-    console.log(text.children[0].textContent);
+    const eleCode = text.children[0];
+    // eleCode.select();
+    // eleCode.setSelectionRange(0,99999);
+
+    navigator.clipboard.writeText(eleCode.textContent);
+
+     navigator.clipboard.readText().then(resp =>{
+      if (resp === eleCode.textContent) {
+        console.log(`ValueSpan:${eleCode.textContent} \nValueClip:${resp}`);
+        console.log("CHUTA A LA PERFECCION");
+      }
+     });
+
+    // console.log(text.children[0].textContent);
     text.children[2].classList.remove('translate-y-5');
     setTimeout(() => {
       text.children[2].classList.add('translate-y-5');
