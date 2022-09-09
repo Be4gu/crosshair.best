@@ -93,17 +93,17 @@ miras.forEach((miras2) => {
 document.querySelectorAll('div.code-crosshire').forEach((text) => {
   text.addEventListener('click', () => {
     const eleCode = text.children[0];
-    // eleCode.select();
+    // eleCode.textContent.select();
     // eleCode.setSelectionRange(0,99999);
 
     navigator.clipboard.writeText(eleCode.textContent);
 
-     navigator.clipboard.readText().then(resp =>{
+    navigator.clipboard.readText().then((resp) => {
       if (resp === eleCode.textContent) {
         console.log(`ValueSpan:${eleCode.textContent} \nValueClip:${resp}`);
-        console.log("CHUTA A LA PERFECCION");
+        console.log('CHUTA A LA PERFECCION');
       }
-     });
+    });
 
     // console.log(text.children[0].textContent);
     text.children[2].classList.remove('translate-y-5');
