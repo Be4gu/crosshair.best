@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Corsshair.best</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/cross.svg" />
+  </head>
+  <body class="flex h-full w-full flex-col items-center justify-center bg-zinc-900">
+    <header class="flex h-32 w-full items-center">
+      <div class="relative ml-20 h-12 w-32">
+        <svg
+          class="lef-0 absolute top-0 h-12 w-12"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="xMidYMid meet"
+          version="1.0"
+          viewBox="13.0 8.0 93.0 82.5"
+          zoomAndPan="magnify"
+          style="fill: rgb(0, 0, 0)"
+          role="img"
+          aria-label="X Mark Illustration"
+        >
+          <path
+            d="m34.25 8.75l1.25-0.75 0.5 0.5q0.5 0.5 2.5 8t5.75 14.25 4.75 6.75h1l2-2.5q2-2.5 3.75-4.75t3.25-4.25 2.25-2.75l0.75-0.75 2.5-0.5q2.5-0.5 9.5 0.75l7 1.25-0.75 3q-0.75 3-3.25 6t-4 5-4.5 5.5-4.5 5.5-1.5 3.5v1.5l3.25 2.75q3.25 2.75 9.75 5.75t18.5 6l12 3-5.5 3q-5.5 3-8.5 4t-8.5 0.5-13-2.5-10.5-3.5-6-3.5-4.5-2h-1.5l-6 5.5q-6 5.5-9 7.5t-5.5 4-7 4-6 2h-1.5l0.75-1.25q0.75-1.25 2.75-4.25t4-5.5 4.5-6.5 5-7 4.5-6l2-3-0.5-2q-0.5-2-2-4t-5.5-9.5-6-12.5-2-6.5v-1.5l6.25-5.75q6.25-5.75 7.5-6.5z"
+            fill-rule="evenodd"
+            style="fill: rgb(239, 45, 94)"
+          ></path>
+        </svg>
+        <span class="absolute left-12 top-[14px] text-center text-3xl font-bold leading-7 text-white">BEST</span>
+        <span class="absolute left-9 top-7 box-border h-4 w-4 rounded-full border-4 border-zinc-900 bg-white text-center"></span>
+      </div>
+    </header>
+    <div class="w-78 mb-7 flex flex-col items-center justify-start font-antonio sm:w-[604px] sm:flex-row sm:gap-14 md:w-[728px] md:gap-10 lg:w-[980px] xl:w-[1232px] 2xl:w-[1484px]">
+      <input
+        id="searcher"
+        type="text"
+        class="order-2 h-[34px] w-72 rounded-md border border-gray-300 bg-inherit pl-2 text-gray-300 placeholder:italic focus:shadow-polvillo focus:outline-none focus:ring-transparent sm:order-none md:w-56"
+        placeholder="Search people..."
+      />
+      <div class="cross-filter order-1 flex pb-3 font-semibold sm:order-none sm:pb-0">
+        <button id="button-ALL" class="box-border border border-gray-300 py-1 px-2 text-gray-300 focus:bg-gray-300 focus:text-[#222]" value="ALL">ALL</button>
+        <button id="button-PRO" class="box-border border border-l-0 border-gray-300 py-1 px-2 text-gray-300" value="PRO">PRO</button>
+        <button id="button-STREAMER" class="box-border border border-l-0 border-gray-300 py-1 px-2 text-gray-300" value="STREAMER">STREAMER</button>
+        <button id="button-FUNNY" class="box-border border border-l-0 border-gray-300 py-1 px-2 text-gray-300" value="FUNNY">FUNNY</button>
+      </div>
+    </div>
+    <main class="relative grid grid-cols-1 justify-items-center gap-7 font-antonio sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6" id="main"></main>
+  </body>
+  <div class="bg-[#2defef]"></div>
+  <script type="module" src="../js/index.js"></script>
+</html>
