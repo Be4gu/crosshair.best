@@ -181,13 +181,13 @@ export const crosshair = [
     'pathImg': '../img/crosshairs/pro/cross-enzo.png',
     'codeCrosshair': '0;s;1;P;h;0;f;0;0t;1;0o;1;0a;1;0f;0;1b;0;S;s;0.5',
   },
-  {
-    'name': 'nataNK',
-    'type': 'pro',
-    'alter': 'NATANK',
-    'pathImg': '../img/crosshairs/pro/cross-natank.png',
-    'codeCrosshair': '0;P;h;0;f;0;0t;1;0l;5;0v;4;0g;1;0o;1;0a;1;0f;0;1b;0',
-  },
+//   {
+//     'name': 'nataNK',
+//     'type': 'pro',
+//     'alter': 'NATANK',
+//     'pathImg': '../img/crosshairs/pro/cross-natank.png',
+//     'codeCrosshair': '0;P;h;0;f;0;0t;1;0l;5;0v;4;0g;1;0o;1;0a;1;0f;0;1b;0',
+//   },
   {
     'name': 'Kiles',
     'type': 'pro',
