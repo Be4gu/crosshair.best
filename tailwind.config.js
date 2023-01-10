@@ -1,5 +1,8 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.{html,js}', './js/*.js', './miras/index.html'],
+  content: [
+    "./src/**/*.{html,ts}"
+  ],
   theme: {
     extend: {
       boxShadow: {
@@ -10,6 +13,24 @@ module.exports = {
         'antonio': 'Antonio, sans-serif',
       },
     },
+    screens: {
+      'xs': '480px',
+
+      'sm': '730px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '900px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1140px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1355px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1570px',
+      // => @media (min-width: 1536px) { ... }
+    }
   },
   plugins: [],
 };
